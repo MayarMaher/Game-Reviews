@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+
+
+* {
+   transition: background-color 0.5s, color 0.2s;
+   -webkit-transition: background-color 0.5s, color 0.2s;
+   -moz-transition: background-color 0.5s, color 0.2s;
+   -ms-transition: background-color 0.5s, color 0.2s;
+   -o-transition: background-color 0.5s, color 0.2s;
+}
+
+body {
+   font-family: "Comfortaa", cursive;
+   min-height: 100%;
+   min-width: 100%;
+   background-color: rgb(1, 1, 90) ;
+   color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-family: "Nerko One", cursive;
+   color: white !important;
+}
+
+a{
+   color:#fff !important;
+}
+
+ul {
+   list-style-position: inside;
+}
+.navbar{
+
+    z-index: 99999;
+    position:sticky !important;
+    top: 0!important;
+
+}
+.main-btn {
+   background-color: grey;
+   color: transparent;
+}
+
+.main-btn:hover {
+   background: linear-gradient(rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.2));
+}
+
+
+.nav-bg {
+   background-color: rgba(3, 3, 65, 0.76) !important;
+   
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+   color: rgb(33, 129, 255) !important;
+   transition: color 0.5s;
+}
+
+::-webkit-scrollbar {
+   width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+   background-color: rgba(8, 8, 116, 0.797);
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: rgb(18, 18, 121);
+   border-radius: 50px;
+   box-shadow: 0 0 5px rgba(176, 203, 224, 0.776) inset;
+}
+
+.home .card {
+   filter: grayscale(0.7);
+   transition: transform 0.5s, filter 0.5s 0.1s;
+   -webkit-transition: transform 0.5s, filter 0.5s 0.1s;
+   -moz-transition: transform 0.5s, filter 0.5s 0.1s;
+   -ms-transition: transform 0.5s, filter 0.5s 0.1s;
+   -o-transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.home .card:hover {
+   transform: scale(1.05);
+   filter: grayscale(0);
+}
+
+.details {
+   background-color: #040447ea;
+
+   backdrop-filter: blur(4px);
+}
+
+
+
+
+.loading {
+   position: fixed;
+   z-index: 9999;
+   inset: 0;
+   background-color: #060a4fe3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.loader {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   display: inline-block;
+   border-top: 4px solid #fff;
+   border-right: 4px solid transparent;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+   position: relative;
+}
+.loader::after {
+   content: "";
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border-left: 4px solid #070b94;
+   border-bottom: 4px solid transparent;
+   animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+
+
+
